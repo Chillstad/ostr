@@ -1,2 +1,5 @@
+from ostr.library.startup.start import start_program
+
+
 def main() -> None:
-    print("Hello from ostr!")
+    start_program()
