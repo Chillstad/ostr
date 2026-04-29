@@ -1,7 +1,7 @@
 [project]
 name = "ostr"
 version = "0.1.0"
-description = "Add your description here"
+description = "A command line tool to aid running OSR style TTRPG games"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
