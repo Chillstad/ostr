@@ -3,14 +3,18 @@ name = "ostr"
 version = "0.1.0"
 description = "A command line tool to aid running OSR style TTRPG games"
 readme = "README.md"
-requires-python = ">=3.14"
+authors = [
+    { name = "Orion Hess", email = "orionhess@gmail.com" }
+]
+requires-python = ">=3.10"
 dependencies = [
     "importlib>=1.0.4",
     "pytest>=9.0.3",
 ]
 
-[tool.pytest.ini_options]
-pythonpath = [
-  ".",
-  "./commands/"
-]
+[project.scripts]
+ostr = "ostr:main"
+
+[build-system]
+requires = ["uv_build>=0.11.7,<0.12.0"]
+build-backend = "uv_build"
